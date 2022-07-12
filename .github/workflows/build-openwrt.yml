@@ -55,8 +55,7 @@ jobs:
 
       - name: Load custom configuration
         run: |
-          [ -e configs/jdcloud_re-sp-01b/jdc.config ] && mv $CONFIG_FILE openwrt/.config
-          cd openwrt
+          [ -e configs/jdcloud_re-sp-01b/jdc.config ] && mv configs/jdcloud_re-sp-01b/jdc.config openwrt/.config
 
       - name: Update feeds
         run: |
